@@ -1,6 +1,6 @@
 # SPA com Angular
 
-O projeto com Single Page Aplicattion
+O projeto com Single Page Application
 
 # Projeto criado em Angular
 
