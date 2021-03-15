@@ -1,4 +1,4 @@
-# Spa com Angular
+# SPA com Angular
 
 O projeto com Single Page Aplicattion
 
