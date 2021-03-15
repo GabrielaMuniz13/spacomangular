@@ -1,20 +1,20 @@
-# Spaangular
+# Spa com Angular
 
-Neste projeto, aprenda a otimizar o desenvolvimento de aplicações web com Single Page Application com foco em gerar uma melhor experiência ao usuário.
+O projeto com Single Page Aplicattion
 
-#Projeto criado em Angular
+# Projeto criado em Angular
 
 ng new spa-angular-dio --prefix=spa
 
-#Para rodar o projeto
+# Para rodar o projeto
 
 ng serve -o
 
-#Adicionado o Angular Material
+# Adicionado o Angular Material
 
 ng add @angular/material
 
-#Criando um componente
+# Criando um componente
 
 ng g c <nome do componente>
 ng g c home
