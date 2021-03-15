@@ -1,0 +1,46 @@
+.example-spacer {
+  flex: 1 1 auto;
+  
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.design{
+  color: black;
+}
+
+.decoration{
+  color:cadetblue;
+}
+
+.cor{
+  color: red;
+}
+
+.blue{
+  color:goldenrod;
+}
+
+.botao{
+  background-color: whitesmoke;
+  color: rgb(51, 20, 109);
+}
+
+.table{
+  color: black;
+  background-color: rgb(51, 139, 139);
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro SPA</title>
+</head>
+<body>
+    <mat-toolbar class="design">
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+          <mat-icon class="decoration">menu</mat-icon>
+        </button>
+        <span>Uninassau</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+          <mat-icon class="cor">favorite</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+          <mat-icon class="blue">share</mat-icon>
+        </button>
+      </mat-toolbar>
+
+      <div>
+    
+        <spa-alunos [valorInicial]="valor"></spa-alunos>
+    
+        <button class="botao" (click)="mudarValor()">Mudar Valor</button>
+        <button class="botao" (click)="reiniciarValor()">Reiniciar Valor</button>
+        <button class="botao" (click)="exibirTabela()">Exibir Tabela</button>
+        
+      </div>
+
+      <table *ngIf="exibeTabela">
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>E-mail</th>
+          <th>Curso</th>
+        </tr>
+        <tr class="table"  *ngFor="let aluno of listaAlunos">
+          <td>{{aluno.nome}}</td>
+          <td>{{aluno.idade}}</td>
+          <td>{{aluno.email}}</td>
+          <td>{{aluno.curso}}</td>
+        </tr>
+      </table>
+    <div>
+      <spa-professores>[valorInicial]="valor1"</spa-professores>
+      <button class="botao" (click)="mudarValor()">Mudar Valor</button>
+      <button class="botao" (click)="reiniciarValor()">Reiniciar Valor</button>
+      <button class="botao" (click)="exibirtabela()">Exibir Tabela</button>
+    </div>
+
+    <table *ngIf="exibetabela">
+      <tr>
+        <th>Nome</th>
+        <th>E-mail</th>
+        <th>Cadeira</th>
+        
+      </tr>
+      <tr class="table"  *ngFor="let professores of listaProfessores">
+        <td>{{professores.nome}}</td>
+        <td>{{professores.email}}</td>
+        <td>{{professores.cadeira}}</td>
+        
+      </tr>
+    </table>
+  <div>
+    <spa-cursos> [valorInicial]="valor2"</spa-cursos>
+    <button class="botao" (click) ="mudarValor()">Mudar Valor</button>
+    <button class="botao" (click)="reiniciarValor()">Reiniciar Valor</button>
+    <button class="botao" (click)="exibirtable()">Exibir Tabela</button>
+
+  </div>
+  <table *ngIf="exibetable">
+    <tr>
+      <th>Curso</th>
+      <th>Duração</th>
+      <th>Tipo</th>
+      
+    </tr>
+    <tr class="table" *ngFor="let cursos of listaCursos">
+      <td>{{cursos.curso}}</td>
+      <td>{{cursos.duracao}}</td>
+      <td>{{cursos.tipo}}</td>
+      
+    </tr>
+  </table>
+
+  
+
+
+
+</body>
+</html>
